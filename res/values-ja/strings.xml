@@ -762,23 +762,6 @@
     <string name="settings_restore_failed">リストア失敗</string>
     <string name="settings_restore_success">リストアしました</string>
     <string name="settings_restore_reboot">端末を再起動してください</string>
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">アプリ個別ハッシュコードの生成に失敗しました</string>
-    <string name="wsc_parse_response_error">ウェブサービスから得たデータの解析に失敗しました</string>
-    <string name="wsc_hash_invalid">ハッシュが一致しないためウェブサービスと接続できません。 
-        これは非公式バージョンか第三者に改変されたGravityBox APKを使用している場合に発生します。</string>
-    <string name="wsc_please_wait">お待ちください&#8230;</string>
-    <string name="wsc_error">ウェブサービス接続中エラー: %s</string>
-    <string name="wsc_task_cancelled">キャンセルされました</string>
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">取引ID番号データの解析に失敗しました</string>
-    <string name="wsc_trans_valid">取引ID番号の認証をしました。GravityBoxを再起動するとプレミアム機能が使用できるようになります。</string>
-    <string name="wsc_trans_invalid">取引ID番号の記録を見つけられませんでした。</string>
-    <string name="wsc_trans_violation">指定した取引ID番号は何回も登録されています。GravityBoxの開発者に連絡してください。</string>
-    <string name="wsc_trans_blocked">指定した取引ID番号はブロックされました。GravityBoxの開発者に連絡してください。</string>
-    <string name="pref_trans_verification_title">PayPal取引ID番号</string>
-    <string name="pref_trans_verification_summary">寄付した場合、Paypalの取引ID番号を入力するとプレミアム機能を使用できるようになります。</string>
-    <string name="wsc_trans_required_summary">この機能はPayPal取引ID番号を認証しないと使えません。</string>
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">システム情報を表示しない</string>
     <!-- Pie: long press delay -->
@@ -985,9 +968,6 @@
     <!-- Lockscreen: show pattern error -->
     <string name="pref_lockscreen_show_pattern_error_title">パターンエラーの表示</string>
     <string name="pref_lockscreen_show_pattern_error_summary">入力したパターンが間違っているとき赤くするようにします。</string>
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">この機能はお試しモードです。もし便利だと思ったら寄付をしてPayPal取引ID番号を入力すれば引き続き使えるようになります。
-        お試しモードはあと%d回再起動すると終了します。</string>
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">デフォルト設定</string>
     <string name="pref_lc_default_settings_summary">有効にすると個別に設定されていない全てのアプリにデフォルトの設定が適用されます。</string>
@@ -1072,11 +1052,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">サークルアイコン(破線)</string>
     <string name="battery_style_circle_dashed_percent">サークルアイコン(破線)＋％</string>
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">サポートしてくださりありがとうございます。GravityBoxを再起動するとプレミアム機能が使えるようになります。
-        GravityBox Unlockerを120分以上インストールしたままにしてください。</string>
-    <string name="pref_about_get_unlocker_title">Unlockerを入手</string>
-    <string name="pref_about_get_unlocker_summary">PayPalが嫌いですか? ここをタップするとGravityBoxのプレミアム機能を使えるようにするUnlockerをPlayストアでダウンロードできます。</string>
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">別のアイコンを使う</string>
     <!-- Smart Radio: ignore mobile data availability -->

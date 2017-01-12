@@ -933,25 +933,6 @@
     <string name="settings_restore_success">Geri yükleme başarılı</string>
     <string name="settings_restore_reboot">Lütfen, cihazınızı yeniden başlatın</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Error generating app specific hash code</string>
-    <string name="wsc_parse_response_error">Error parsing data obtained from web service</string>
-    <string name="wsc_hash_invalid">Web service refused to communicate due to hash mismatch. This typically happens in case 
-        you run unofficial version or GravityBox APK has been modified by 3rd party.</string>
-    <string name="wsc_please_wait">Lütfen bekleyin&#8230;</string>
-    <string name="wsc_error">Error communicating with Web service: %s</string>
-    <string name="wsc_task_cancelled">Web service operation cancelled</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Error parsing transaction data obtained from web service</string>
-    <string name="wsc_trans_valid">İşlem numarası doğrulama başarılı. Ücretli özellikler GravityBox yeniden başlatıldıktan sonra açılacaktır.</string>
-    <string name="wsc_trans_invalid">Belirtilen işlem numarası kaydı bulunamıyor</string>
-    <string name="wsc_trans_violation">Belirtilen işlem numarası çok kez kaydedilmiş. Çözmek için GravityBox geliştiricisine başvurun.</string>
-    <string name="wsc_trans_blocked">Belirtilen işlem numarası engellenmiş. Çözmek için GravityBox geliştiricisine başvurun.</string>
-    <string name="pref_trans_verification_title">PayPal işlem numarası</string>
-    <string name="pref_trans_verification_summary">Bağış yapmışsanız, ücretli özelliklerin kilidini açmak için PayPal bağış işlem numaranızı girebilirsiniz</string>
-    <string name="wsc_trans_required_summary">Bu özellik ücretlidir ve kilidin açılmasını gerektirir</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Sistem bilgisini gösterme</string>
 
@@ -1188,9 +1169,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Desen hatasını göster</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Desen yanlış girildiğinde yuvarlakların etrafı kırmızı olur</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Bu özellik deneme modunda. Yararlı bulursanız ücretli özellikleri açtıktan sonra kullanmaya devam edebilirsiniz. Deneme süresi %d yeniden başlatmadan sonra sona erer.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Varsayılan ayarlar</string>
     <string name="pref_lc_default_settings_summary">Açık olduğunda, varsayılan ayarlar otomatik olarak etkin açık ayarları olmayan tüm uygulamalara uygulanır</string>
@@ -1291,12 +1269,6 @@ Başlangıç sesi zil sesinden daha yüksek ayarlandığından, zil sesi tonu zi
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Çizgili yuvarlak gösterge</string>
     <string name="battery_style_circle_dashed_percent">Çizgili yuvarlak yüzdeli pil göstergesi</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Desteğiniz için teşekkürler. Ücretli özellikler sistem yeniden başlatıldıktan sonra açılacaktır. 
-        Unlocker\'ı iade süresi dolduktan sonra kaldırmanız GravityBox\'ı kilidi açık tutmaya devam ettirecektir.</string>
-    <string name="pref_about_get_unlocker_title">Kilidi aç</string>
-    <string name="pref_about_get_unlocker_summary">PayPal hesabınız yok mu? Buraya dokunup Play Store uygulamasını indirerek ücretli özelliklerin kilidi açabilirsiniz.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Alternatif simge kullan</string>

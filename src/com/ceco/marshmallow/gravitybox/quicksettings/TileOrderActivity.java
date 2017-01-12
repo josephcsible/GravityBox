@@ -264,8 +264,6 @@ public class TileOrderActivity extends ListActivity implements View.OnClickListe
             return false;
         if (key.equals("gb_tile_nfc") && !Utils.hasNfc(mContext))
             return false;
-        if (key.equals("gb_tile_quiet_hours") && LedSettings.isUncLocked(mContext))
-            return false;
         if (key.equals("gb_tile_compass") && !Utils.hasCompass(mContext))
             return false;
         if (key.equals("aosp_tile_cell2") && (!Utils.isMotoXtDevice() || !hasMsimSupport()))

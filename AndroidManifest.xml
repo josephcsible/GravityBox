@@ -30,15 +30,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" /> 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
-    <permission
-        android:name="gravitybox.permission.UNLOCK"
-        android:label="Permission to unlock GravityBox premium features"
-        android:protectionLevel="signature" />
 
     <application
         android:name="com.ceco.marshmallow.gravitybox.GravityBoxApplication"
@@ -122,16 +116,6 @@
         </activity>
 
         <activity
-            android:name="com.ceco.marshmallow.gravitybox.UnlockActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:exported="false"
-            android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:stateNotNeeded="true"
-            android:permission="gravitybox.permission.UNLOCK">
-        </activity>
-
-        <activity
             android:name="com.ceco.marshmallow.gravitybox.PickImageActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:exported="false"
@@ -178,27 +162,6 @@
             android:exported="false">
             <intent-filter>
                  <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <receiver 
-            android:name="com.ceco.marshmallow.gravitybox.UnlockActivity$UnlockReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="gravitybox.permission.UNLOCK">
-            <intent-filter>
-                 <action android:name="gravitybox.intent.action.UNLOCK" />
-            </intent-filter>
-        </receiver>
-
-        <receiver 
-            android:name="com.ceco.marshmallow.gravitybox.UnlockActivity$PkgManagerReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                 <action android:name="android.intent.action.PACKAGE_ADDED" />
-                 <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
-                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
 

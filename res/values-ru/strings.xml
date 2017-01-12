@@ -942,25 +942,6 @@
     <string name="settings_restore_success">Восстановление выполнено</string>
     <string name="settings_restore_reboot">Пожалуйста, перезагрузите устройство</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Ошибка создания уникального хаш-кода приложения</string>
-    <string name="wsc_parse_response_error">Ошибка обработки данных, полученных от сетевой службы</string>
-    <string name="wsc_hash_invalid">Сетевая служба отказала в соединении из-за несовпадения хэш-кода. Обычно это происходит,если 
-        Вы используете неофициальную версию, или apk-файл GravityBox был модифицирован третьей стороной.</string>
-    <string name="wsc_please_wait">Пожалуйста, подождите&#8230;</string>
-    <string name="wsc_error">Ошибка связи с сетевой службой: %s</string>
-    <string name="wsc_task_cancelled">Операция сетевой службы отменена</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Ошибка обработки данных транзакции, полученных от сетевой службы</string>
-    <string name="wsc_trans_valid">Подтверждение ID транзакции выполнено. Премиум-функции будут разблокированы после перезагрузки GravityBox.</string>
-    <string name="wsc_trans_invalid">Не удалось найти запись для ID указанной транзакции</string>
-    <string name="wsc_trans_violation">Указанный ID транзакции был использован слишком много раз. Свяжитесь с разработчиком GravityBox для решения проблемы.</string>
-    <string name="wsc_trans_blocked">Указанный ID транзакции заблокирован. Свяжитесь с разработчиком GravityBox для решения проблемы.</string>
-    <string name="pref_trans_verification_title">ID транзакции PayPal</string>
-    <string name="pref_trans_verification_summary">Если Вы внесли пожертвование, можете ввести ID транзакции пожертвования PayPal для разблокировки премиум-функций</string>
-    <string name="wsc_trans_required_summary">Функция требует действительного ID транзакции PayPal</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Откл. системн.информацию</string>
 
@@ -1198,10 +1179,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Показать ошибку ключа</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Отображение красным неправильного ввода графического ключа</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Функция работает в пробном режиме. Если Вы считаете её полезной, можете продолжать пользоваться ей после разблокировки премиум-функций. 
-        Пробный период заканчивается через %d перезагрузок.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Умолчания</string>
     <string name="pref_lc_default_settings_summary">Если включено, настройки по умолчанию будут применены ко всем приложениям, не имеющим заданных активных параметров</string>
@@ -1305,12 +1282,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Круг из точек</string>
     <string name="battery_style_circle_dashed_percent">Круг из точек с процентами</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Спасибо за Вашу поддержку. Премиум-функции будут разблокированы после перезагрузки системы.
-        При удалении ключа после истечения периода возврата оплаты, разблокировка функций GravityBox сохранится.</string>
-    <string name="pref_about_get_unlocker_title">Получить ключ разблокировки</string>
-    <string name="pref_about_get_unlocker_summary">Нет счёта в PayPal? Просто нажмите здесь для получения ключа разблокировки премиум-функций GravityBox из Play Store.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Альтернативный значок</string>

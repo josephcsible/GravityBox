@@ -168,9 +168,6 @@ public class SettingsManager {
             return false;
         }
 
-        // Save existing UUID
-        String uuid = getOrCreateUuid();
-
         // preferences
         String[] prefsFileNames = new String[] { 
                 mContext.getPackageName() + "_preferences.xml",
@@ -247,44 +244,8 @@ public class SettingsManager {
             }
         }
 
-        // Put back UUID
-        resetUuid(uuid);
-
         Toast.makeText(mContext, R.string.settings_restore_success, Toast.LENGTH_SHORT).show();
         return true;
-    }
-
-    public String getOrCreateUuid() {
-        final String prefsName = mContext.getPackageName() + "_preferences";
-        SharedPreferences prefs = mContext.getSharedPreferences(prefsName, Context.MODE_WORLD_READABLE);
-        String uuid = prefs.getString("settings_uuid", null);
-        if (uuid == null) {
-            uuid = UUID.randomUUID().toString();
-            prefs.edit().putString("settings_uuid", uuid).commit();
-        }
-        return uuid;
-    }
-
-    public void resetUuid(String uuid) {
-        String prefsName = mContext.getPackageName() + "_preferences";
-        SharedPreferences prefs = mContext.getSharedPreferences(prefsName, Context.MODE_WORLD_READABLE);
-        prefs.edit().putString("settings_uuid", uuid).commit();
-    }
-
-    public void resetUuid() {
-        resetUuid(null);
-    }
-
-    public long getUnlockerTimestamp() {
-        String prefsName = mContext.getPackageName() + "_preferences";
-        SharedPreferences prefs = mContext.getSharedPreferences(prefsName, Context.MODE_WORLD_READABLE);
-        return prefs.getLong("gb_unlocker_tstamp", 0);
-    }
-
-    public void setUnlockerTimestamp(long ms) {
-        String prefsName = mContext.getPackageName() + "_preferences";
-        SharedPreferences prefs = mContext.getSharedPreferences(prefsName, Context.MODE_WORLD_READABLE);
-        prefs.edit().putLong("gb_unlocker_tstamp", ms).commit();
     }
 
     public void fixFolderPermissionsAsync() {

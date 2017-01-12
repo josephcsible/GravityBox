@@ -940,25 +940,6 @@
     <string name="settings_restore_success">Restaurada correctamente</string>
     <string name="settings_restore_reboot">Por favor, reinicia tu dispositivo</string>
     
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Error al generar código hash específico de la aplicación</string>
-    <string name="wsc_parse_response_error">Error al analizar los datos obtenidos del servicio web</string>
-    <string name="wsc_hash_invalid">El servicio web ha rechazado la conexión porque el hash no coincide. Suele ocurrir si 
-        utilizas una versión no oficial o el APK de GravityBox ha sido modificado por terceras partes.</string>
-    <string name="wsc_please_wait">Espera&#8230;</string>
-    <string name="wsc_error">Error al comunicar con el servicio web: %s</string>
-    <string name="wsc_task_cancelled">Operación del servicio web cancelada</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Error al analizar los datos de transacción obtenidos del servicio web</string>
-    <string name="wsc_trans_valid">Verificación de ID de transacción correcta. Las características Premium se desbloquearán al reiniciar GravityBox.</string>
-    <string name="wsc_trans_invalid">No se ha podido encontrar el registro de la ID de transacción especificada</string>
-    <string name="wsc_trans_violation">La ID de transacción especificada se ha registrado demasiadas veces. Ponte en contacto con el desarrollador de GravityBox para solucionarlo.</string>
-    <string name="wsc_trans_blocked">La ID de transacción especificada se ha bloqueado. Ponte en contacto con el desarrollador de GravityBox para solucionarlo.</string>
-    <string name="pref_trans_verification_title">ID de transacción de PayPal</string>
-    <string name="pref_trans_verification_summary">Si has donado, puedes introducir la ID de la transacción de PayPal para desbloquear las características Premium</string>
-    <string name="wsc_trans_required_summary">Esta característica es para usuarios premium y requiere desbloquearla</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Desactivar información del sistema</string>
 	
@@ -1196,10 +1177,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Mostrar patrón erróneo</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Mostrar rastro rojo al introducir patrón incorrecto</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Esta herramienta es para usuarios premium. Si la encuentras útil, puedes seguir usándola tras desbloquear el modo premium.
-        Esta versión de prueba acaba tras %d reinicios.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Ajustes predeterminados</string>
     <string name="pref_lc_default_settings_summary">Al activar se aplicarán automáticamente los ajustes predeterminados a todas las aplicaciones que no tengan ajustes explícitos activos</string>
@@ -1304,12 +1281,6 @@
     <string name="battery_style_circle_dashed">Batería circular punteada</string>
     <string name="battery_style_circle_dashed_percent">Batería circular punteada con porcentaje</string>
     
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Gracias por tu aportación. Las características Premium se desbloquearán tras reiniciar GravityBox. 
-        Asegúrate de mantener la app "GravityBox Unlocker" instalada durante al menos 120 minutos.</string>
-    <string name="pref_about_get_unlocker_title">Obtener "GravityBox Unlocker"</string>
-    <string name="pref_about_get_unlocker_summary">¿No usas PayPal? Pulsa aquí para obtener el desbloqueador de características premium desde la Play Store.</string>
-
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Usar icono alternativo</string>
 

@@ -935,24 +935,6 @@
     <string name="settings_restore_success">Wiederherstellen erfolgreich</string>
     <string name="settings_restore_reboot">Bitte starten Sie das Gerät neu</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Fehler beim Erstellen des Hashcodes</string>
-    <string name="wsc_parse_response_error">Fehler beim Parsen von Web Service Daten</string>
-    <string name="wsc_hash_invalid">Web Service hat die Kommunikation aufgrund eines falschen Hashcodes abgelehnt. Das passiert meist bei Modifikationen an der App.</string>
-    <string name="wsc_please_wait">Bitte warten&#8230;</string>
-    <string name="wsc_error">Fehler beim Kommunizieren mit Web Service: %s</string>
-    <string name="wsc_task_cancelled">Web Service Kommunikation abgebrochen</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Fehler beim Parsen der Transaktionsdaten</string>
-    <string name="wsc_trans_valid">Überprüfung des Transaktionscodes erfolgreich. Premiumfunktionen werden freigeschaltet nachdem GravityBox neugestartet wurde.</string>
-    <string name="wsc_trans_invalid">Zum angegebenen Transaktionscode wurde kein Eintrag gefunden</string>
-    <string name="wsc_trans_violation">Der angegebene Transaktionscode wurde zu oft registriert. Kontaktieren Sie bei Bedarf den GravityBox-Entwickler (Englisch).</string>
-    <string name="wsc_trans_blocked">Der angegebene Transaktionscode ist blockiert. Kontaktieren Sie bei Bedarf den GravityBox-Entwickler (Englisch).</string>
-    <string name="pref_trans_verification_title">Paypal Transaktionscode</string>
-    <string name="pref_trans_verification_summary">Sollten Sie gespendet haben, können Sie mit Ihrem Paypal Transaktionscode Premiumfunktionen freischalten</string>
-    <string name="wsc_trans_required_summary">Diese Funktion erfordert einen gültigen PayPal Transaktionscode.</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Systeminfo deaktivieren</string>
 
@@ -1189,9 +1171,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Falsches Muster anzeigen</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Falsches Muster durch rote Spur kenntlich machen</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Diese Funktion ist im Testmodus. Nach Ablauf der Testphase kann sie durch die Registrierung eines PayPal Transaktionscodes weiterhin genutzt werden. Die Testphase endet nach %d Neustarts.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Standardeinstellungen</string>
     <string name="pref_lc_default_settings_summary">Standard auf alle Anwendungen ohne aktive Änderungen anwenden</string>
@@ -1295,12 +1274,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Gestrichelt-rund</string>
     <string name="battery_style_circle_dashed_percent">Gestrichelt-rund mit Prozent</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Danke für Ihre Unterstützung. Die Premiumfunktionen werden freigeschaltet nachdem GravityBox neugestartet wurde.
-        Stellen Sie sicher, dass GravityBox Unlocker für mindestens 120 Minuten installiert bleibt.</string>
-    <string name="pref_about_get_unlocker_title">Unlocker erwerben</string>
-    <string name="pref_about_get_unlocker_summary">Sie haben kein PayPal-Konto? Klicken Sie hier um die Premiumfunktionen über den Play Store freizuschalten.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Alternatives Symbol verwenden</string>

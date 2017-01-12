@@ -37,7 +37,6 @@ import android.preference.PreferenceFragment;
 
 public class QuietHoursActivity extends Activity {
 
-    public static final String PREF_KEY_QH_LOCKED = "pref_lc_qh_locked";
     public static final String PREF_KEY_QH_ENABLED = "pref_lc_qh_enabled";
     public static final String PREF_KEY_QH_START = "pref_lc_qh_start2";
     public static final String PREF_KEY_QH_END = "pref_lc_qh_end2";
@@ -62,7 +61,7 @@ public class QuietHoursActivity extends Activity {
         try {
             SharedPreferences prefs = context.getSharedPreferences("quiet_hours", Context.MODE_WORLD_READABLE);
             QuietHours qh = new QuietHours(prefs);
-            if (qh.uncLocked || !qh.enabled) {
+            if (!qh.enabled) {
                 return null;
             }
 

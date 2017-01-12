@@ -30,13 +30,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class LedMainActivity extends Activity {
-    public static final String EXTRA_UUID_REGISTERED = "uuidRegistered";
-    public static final String EXTRA_TRIAL_COUNTDOWN = "uncTrialCountdown";
-
-    private boolean mUuidRegistered;
-    private int mTrialCountdown;
-    private TextView mTrialInfoView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         File file = new File(getFilesDir() + "/" + GravityBoxSettings.FILE_THEME_DARK_FLAG);
@@ -46,26 +39,7 @@ public class LedMainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
 
-        if (getIntent() == null || !getIntent().hasExtra(EXTRA_UUID_REGISTERED) ||
-                !getIntent().hasExtra(EXTRA_TRIAL_COUNTDOWN)) {
-            finish();
-            return;
-        } else {
-            mUuidRegistered = getIntent().getBooleanExtra(EXTRA_UUID_REGISTERED, false);
-            mTrialCountdown = getIntent().getIntExtra(EXTRA_TRIAL_COUNTDOWN, 0);
-            if (!mUuidRegistered && mTrialCountdown == 0) {
-                finish();
-                return;
-            }
-        }
-
         setContentView(R.layout.led_control_main_activity);
-
-        mTrialInfoView = (TextView) findViewById(R.id.trial_info);
-        if (!mUuidRegistered) {
-            mTrialInfoView.setText(String.format(getString(R.string.trial_info), mTrialCountdown));
-            mTrialInfoView.setVisibility(View.VISIBLE);
-        }
     }
 
     public static class PrefsFragment extends PreferenceFragment {

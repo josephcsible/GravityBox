@@ -939,24 +939,6 @@
     <string name="settings_restore_success">A visszaállítás sikerült</string>
     <string name="settings_restore_reboot">Kérem indítsa újra a készülékét.</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Hiba történt az alkalmazás specifikus hash kód létrehozásakor</string>
-    <string name="wsc_parse_response_error">Hiba történt a web szolgáltatástól kapott adatok elemzése során</string>
-    <string name="wsc_hash_invalid">A web szolgáltatás megtagadta a kommunikációt hash eltérés miatt. Ez általában akkor történik meg, ha nem hivatalos verziót futtat, vagy a Gravitybox APK harmadik fél által módosításra került.</string>
-    <string name="wsc_please_wait">Kérem várjon&#8230;</string>
-    <string name="wsc_error">Hiba történt a Web szolgáltatással való kommunikáció során: %s</string>
-    <string name="wsc_task_cancelled">A web szolgáltatás működése törölve</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Hiba történt a web szolgáltatástól kapott tranzakciós adat elemzése során</string>
-    <string name="wsc_trans_valid">A tranzakció-azonosító ellenőrzése sikerült. A prémium funkciók a Gravitybox újraindítása után kerülnek feloldásra.</string>
-    <string name="wsc_trans_invalid">Nem található feljegyzés a megadott tranzakció-azonosítóhoz.</string>
-    <string name="wsc_trans_violation">A megadott tranzakció-azonosító túl sokszor került regisztrálásra. A probléma megoldásához lépjen kapcsolatba a GravityBox fejlesztőivel.</string>
-    <string name="wsc_trans_blocked">A megadott tranzakció-azonosító blokkolásra került. A probléma megoldásához lépjen kapcsolatba a GravityBox fejlesztőivel.</string>
-    <string name="pref_trans_verification_title">PayPal tranzakció-azonosító</string>
-    <string name="pref_trans_verification_summary">Amennyiben adományozott, beírhatja a PayPal adományozási tranzakció-azonosítóját a prémium funkciók feloldásához.</string>
-    <string name="wsc_trans_required_summary">Ez prémium funkció, melyhez feloldás szükséges</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Rendszerinformációs gomb letiltása</string>
 
@@ -1193,9 +1175,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Feloldó minta hiba mutatása</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Piros mintanyom mutatása hibás feloldó minta megadásakor</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Ez a funkció próba üzemmódban van. Ha hasznosnak találja, tovább használhatja a prémium funkciók feloldása után. A próba üzemmód %d újraindítás után véget ér.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Alapértelmezett beállítások</string>
     <string name="pref_lc_default_settings_summary">Ha be van kapcsolva, az alapértelmezett beállítások automatikusan beállításra kerülnek minden aktív, explicit értesítés felügyelet beállítás nélküli alkalmazáshoz</string>
@@ -1294,11 +1273,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Szaggatott kör akkumulátor</string>
     <string name="battery_style_circle_dashed_percent">Szaggatott kör akkumulátor százalékkal</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Köszönöm a támogatást. A prémium funkciók a rendszer újraindítása után kerülnek feloldásra. A feloldó (unlocker) visszatérítési határidő lejárta utáni eltávolítása esetén a Gravitybox prémium funkciói feloldott állapotban maradnak.</string>
-    <string name="pref_about_get_unlocker_title">Feloldó beszerzése</string>
-    <string name="pref_about_get_unlocker_summary">Nincs PayPal fiókja? Csak érintsen ide a GravityBox prémium funkciók feloldójának a Play Áruházból való beszerzéséhez</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Alternatív ikon használata</string>

@@ -46,7 +46,6 @@ public class QuietHours {
         public static final String RINGER = "ringer";
     }
 
-    public boolean uncLocked;
     public boolean enabled;
     int start;
     int end;
@@ -62,7 +61,6 @@ public class QuietHours {
     public boolean muteSystemVibe;
 
     public QuietHours(SharedPreferences prefs) {
-        uncLocked = prefs.getBoolean(QuietHoursActivity.PREF_KEY_QH_LOCKED, false);
         enabled = prefs.getBoolean(QuietHoursActivity.PREF_KEY_QH_ENABLED, false);
         start = prefs.getInt(QuietHoursActivity.PREF_KEY_QH_START, 1380);
         end = prefs.getInt(QuietHoursActivity.PREF_KEY_QH_END, 360);
@@ -81,7 +79,7 @@ public class QuietHours {
     }
 
     public boolean quietHoursActive(LedSettings ls, Notification n, boolean userPresent) {
-        if (uncLocked || !enabled) return false;
+        if (!enabled) return false;
 
         if (ls.getEnabled() && ls.getQhIgnore()) {
             if (ls.getQhIgnoreList() == null || ls.getQhIgnoreList().trim().isEmpty()) {
@@ -108,7 +106,7 @@ public class QuietHours {
     }
 
     public boolean quietHoursActive() {
-        if (uncLocked || !enabled) return false;
+        if (!enabled) return false;
 
         if (mode != Mode.AUTO) {
             return (mode == Mode.ON ? true : false);

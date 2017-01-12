@@ -938,25 +938,6 @@
     <string name="settings_restore_success">Аднаўленне паспяховае</string>
     <string name="settings_restore_reboot">Калі ласка, перазагрузіце прыладу</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Памылка стварэння ўнікальнага хэш-кода дадатку</string>
-    <string name="wsc_parse_response_error">Памылка апрацоўкі дадзеных, атрыманых ад сеткавай службы</string>
-    <string name="wsc_hash_invalid">Сеткавая служба адмовіла ў злучэнні з-за несупадзення хэш-кода. Звычайна гэта адбываецца,калі 
-Вы скарыстаеце неафіцыйную версію, ці apk-файл GravityBox быў мадыфікаваны трэцім бокам.</string>
-    <string name="wsc_please_wait">Калі ласка, пачакайце&#8230;</string>
-    <string name="wsc_error">Памылка сувязі з сеткавай службай: %s</string>
-    <string name="wsc_task_cancelled">Аперацыя сеткавай службы скасавана</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Памылка апрацоўкі дадзеных транзакцыі, атрыманых ад сеткавай службы</string>
-    <string name="wsc_trans_valid">Пацверджанне ID транзакцыі паспяховае. Прэміум-функцыі будуць разблакаваны пасля перазагрузкі GravityBox.</string>
-    <string name="wsc_trans_invalid">Не атрымалася знайсці запіс для ID паказанай транзакцыі</string>
-    <string name="wsc_trans_violation">Паказаны ID транзакцыі быў скарыстаны зашмат разоў. Звяжыцеся з распрацоўнікам GravityBox для вырашэння праблемы.</string>
-    <string name="wsc_trans_blocked">Паказаны ID транзакцыі заблакаваны. Звяжыцеся з распрацоўнікам GravityBox для вырашэння праблемы.</string>
-    <string name="pref_trans_verification_title">ID транзакцыі PayPal</string>
-    <string name="pref_trans_verification_summary">Калі Вы ўнеслі ахвяраванне, можаце ўвесці ID транзакцыі ахвяравання PayPal для разблакоўкі прэміум-функцый</string>
-    <string name="wsc_trans_required_summary">Функцыя патрабуе сапраўднага ID транзакцыі PayPal</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Адключыць сістэмную інфармацыю</string>
 
@@ -1194,10 +1175,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Паказаць памылку ключа</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Адлюстраванне чырвоным няправільнага ўводу графічнага ключа</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Функцыя працуе ў спробавым рэжыме. Калі Вы лічыце яе карыснай, можаце працягваць карыстацца ёй пасля рэгістрацыі 
-ID транзакцыі ахвяравання PayPal. Спробавы перыяд сканчаецца праз %d перазагрузак.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Па змаўчанні</string>
     <string name="pref_lc_default_settings_summary">Калі ўключана, налады па змаўчанні будуць ужыты да ўсіх дадаткаў, што не маюць зададзеных актыўных параметраў</string>
@@ -1301,12 +1278,6 @@ ID транзакцыі ахвяравання PayPal. Спробавы перы
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Кола з кропак</string>
     <string name="battery_style_circle_dashed_percent">Кола з кропак і адсоткамі</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Дзякуй за Вашу падтрымку. Прэміум-функцыі будуць разблакаваны пасля перазагрузкі сістэмы.
-Пры выдаленні ключа пасля заканчэння перыяду звароту аплаты, разблакоўка функцый GravityBox захаваецца.</string>
-    <string name="pref_about_get_unlocker_title">Атрымаць ключ разблакоўкі</string>
-    <string name="pref_about_get_unlocker_summary">Няма рахунка ў PayPal? Проста націсніце тут для атрымання ключа разблакоўкі прэміум-функцый GravityBox з Play Store.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Альтэрнатыўны значок</string>

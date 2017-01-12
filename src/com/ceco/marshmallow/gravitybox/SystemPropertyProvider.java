@@ -40,13 +40,6 @@ public class SystemPropertyProvider {
     public static final String ACTION_GET_SYSTEM_PROPERTIES = 
             "gravitybox.intent.action.ACTION_GET_SYSTEM_PROPERTIES";
     public static final int RESULT_SYSTEM_PROPERTIES = 1025;
-    public static final String ACTION_REGISTER_UUID = 
-            "gravitybox.intent.action.ACTION_REGISTER_UUID";
-    public static final String EXTRA_UUID = "uuid";
-    private static final String SETTING_GRAVITYBOX_UUID = "gravitybox_uuid";
-    private static final String SETTING_UNC_TRIAL_COUNTDOWN = "gravitybox_unc_trial_countdown";
-
-    private static String mSettingsUuid;
 
     private static void log(String message) {
         XposedBridge.log(TAG + ": " + message);
@@ -95,26 +88,14 @@ public class SystemPropertyProvider {
                         if (DEBUG) log("SystemUIService created. Registering BroadcastReceiver");
                         final ContentResolver cr = context.getContentResolver();
 
-                        // register or decrease UNC trial countdown
-                        int uncTrialCountdown = Settings.System.getInt(cr, SETTING_UNC_TRIAL_COUNTDOWN, -1);
-                        if (uncTrialCountdown == -1) {
-                            Settings.System.putInt(cr, SETTING_UNC_TRIAL_COUNTDOWN, 50);
-                        } else {
-                            if (--uncTrialCountdown >= 0) {
-                                Settings.System.putInt(cr, SETTING_UNC_TRIAL_COUNTDOWN, uncTrialCountdown);
-                            }
-                        }
-
                         IntentFilter intentFilter = new IntentFilter();
                         intentFilter.addAction(ACTION_GET_SYSTEM_PROPERTIES);
-                        intentFilter.addAction(ACTION_REGISTER_UUID);
                         context.registerReceiver(new BroadcastReceiver() {
                             @Override
                             public void onReceive(Context context, Intent intent) {
                                 if (DEBUG) log("Broadcast received: " + intent.toString());
                                 if (intent.getAction().equals(ACTION_GET_SYSTEM_PROPERTIES)
                                         && intent.hasExtra("receiver")) {
-                                    mSettingsUuid = intent.getStringExtra("settings_uuid");
                                     final Resources res = context.getResources();
                                     ResultReceiver receiver = intent.getParcelableExtra("receiver");
                                     Bundle data = new Bundle();
@@ -126,11 +107,6 @@ public class SystemPropertyProvider {
                                             getSystemConfigBool(res, "config_unplugTurnsOnScreen"));
                                     data.putInt("defaultNotificationLedOff",
                                             getSystemConfigInteger(res, "config_defaultNotificationLedOff"));
-                                    data.putBoolean("uuidRegistered", (mSettingsUuid != null &&
-                                            mSettingsUuid.equals(Settings.System.getString(
-                                                    cr, SETTING_GRAVITYBOX_UUID))));
-                                    data.putInt("uncTrialCountdown", Settings.System.getInt(cr,
-                                            SETTING_UNC_TRIAL_COUNTDOWN, 50));
                                     data.putBoolean("hasMsimSupport", PhoneWrapper.hasMsimSupport());
                                     data.putInt("xposedBridgeVersion", XposedBridge.XPOSED_BRIDGE_VERSION);
                                     data.putBoolean("supportsFingerprint", supportsFingerprint(context));
@@ -145,8 +121,6 @@ public class SystemPropertyProvider {
                                         log("hasNavigationBar: " + data.getBoolean("hasNavigationBar"));
                                         log("unplugTurnsOnScreen: " + data.getBoolean("unplugTurnsOnScreen"));
                                         log("defaultNotificationLedOff: " + data.getInt("defaultNotificationLedOff"));
-                                        log("uuidRegistered: " + data.getBoolean("uuidRegistered"));
-                                        log("uncTrialCountdown: " + data.getInt("uncTrialCountdown"));
                                         log("hasMsimSupport: " + data.getBoolean("hasMsimSupport"));
                                         log("xposedBridgeVersion: " + data.getInt("xposedBridgeVersion"));
                                         log("supportsFingerprint: " + data.getBoolean("supportsFingerprint"));
@@ -156,10 +130,6 @@ public class SystemPropertyProvider {
                                         log("isOxygenOs35Rom: " + data.getBoolean("isOxygenOs35Rom"));
                                     }
                                     receiver.send(RESULT_SYSTEM_PROPERTIES, data);
-                                } else if (intent.getAction().equals(ACTION_REGISTER_UUID) && 
-                                            intent.hasExtra(EXTRA_UUID) && 
-                                            intent.getStringExtra(EXTRA_UUID).equals(mSettingsUuid)) {
-                                    Settings.System.putString(cr, SETTING_GRAVITYBOX_UUID, mSettingsUuid);
                                 }
                             }
                         }, intentFilter);

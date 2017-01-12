@@ -922,25 +922,6 @@
     <string name="settings_restore_success">還原成功</string>
     <string name="settings_restore_reboot">請重新啟動您的裝置</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">產生應用程式特定的散列碼時發生錯誤</string>
-    <string name="wsc_parse_response_error">剖析從 Web 服務獲得的資料時發生錯誤</string>
-    <string name="wsc_hash_invalid">由於散列碼不符， Web 服務拒絕通信。這通常發生在以下情況：
-      您運行非官方版本的 GravityBox 或 GravityBox APK 檔已經被第三方修改。</string>
-    <string name="wsc_please_wait">請稍後&#8230;</string>
-    <string name="wsc_error">與 Web 服務通信錯誤： %s</string>
-    <string name="wsc_task_cancelled">Web 服務動作取消</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">剖析從 Web 服務獲得的交易資料時發生錯誤</string>
-    <string name="wsc_trans_valid">交易 ID 驗證成功。進階功能將於 GravityBox 重新啟動後被解鎖。</string>
-    <string name="wsc_trans_invalid">無法找到指定的交易 ID 記錄</string>
-    <string name="wsc_trans_violation">指定的交易 ID 已經註冊過很多次。請聯絡 GravityBox 開發者來解決。</string>
-    <string name="wsc_trans_blocked">指定的交易 ID 已被封鎖。請聯絡 GravityBox 開發者來解決。</string>
-    <string name="pref_trans_verification_title">PayPal 交易 ID</string>
-    <string name="pref_trans_verification_summary">如果您已經捐贈，您可以輸入您捐贈時所獲得的 PayPal 交易 ID 來解鎖進階功能</string>
-    <string name="wsc_trans_required_summary">此功能屬於進階功能，需要有效的 PayPal 交易 ID 來解鎖</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">停用系統資訊</string>
 
@@ -1178,10 +1159,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">提示錯誤的解鎖圖形</string>
     <string name="pref_lockscreen_show_pattern_error_summary">當輸入了錯誤的解鎖圖形時以紅色標記作出提示</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">此功能正在試用階段，如果您覺得實用並想繼續使用此功能，請使用您的 PayPal  捐贈。
-	本功能試用期將在您重新啟動裝置 %d 次後結束。</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">預設設定</string>
     <string name="pref_lc_default_settings_summary">當啟用後，為所有未有設置過通知控制的應用程式套用下列的設定</string>
@@ -1278,12 +1255,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">虛線圓形電量指示器</string>
     <string name="battery_style_circle_dashed_percent">虛線圓形電量指示器 (包含電量百分比)</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">感謝您的支持。當重新啟動 GravityBox 後進階功能將會被解鎖。
-      請注意，安裝 GravityBox 解鎖器後可能要 120 分鐘才能順利解鎖全部功能。</string>
-    <string name="pref_about_get_unlocker_title">取得 GravityBox 解鎖器</string>
-    <string name="pref_about_get_unlocker_summary">沒有 PayPal 帳號？請按此到 Play 商店購買 GravityBox 解鎖器來解鎖所有進階功能</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">使用另一款圖示</string>

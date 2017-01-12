@@ -907,25 +907,6 @@
     <string name="settings_restore_success">השחזור בוצע בהצלחה</string>
     <string name="settings_restore_reboot">אנא הפעל את מכשירך מחדש</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">אירעה שגיאה בייצור קוד HASH ספציפי ליישום</string>
-    <string name="wsc_parse_response_error">אירעה שגיאה בעיבוד נתונים שנאספו מהרשת</string>
-    <string name="wsc_hash_invalid">שירותי רשת הפסיקו את החיבור בשל אי תאימות של קוד HASH. בדרך כלל זה קורה בשל 
-        שימוש בגירסה בלתי רשמית של GravityBox או שימוש בגרסה ששונתה על ידי צד שלישי.</string>
-    <string name="wsc_please_wait">אנא המתן&#8230;</string>
-    <string name="wsc_error">אירעה שגיאה בהתחברות לשרת: %s</string>
-    <string name="wsc_task_cancelled">פעולת החיבור לשרת בוטלה</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">אירעה שגיאה בביצוע עסקה בשירותי רשת</string>
-    <string name="wsc_trans_valid">זיהוי עסקה בוצע בהצלחה. התכונות בתשלום יופעלו לאחר הפעלת היישום מחדש.</string>
-    <string name="wsc_trans_invalid">לא ניתן למצוא רישום אודות זיהוי העסקה</string>
-    <string name="wsc_trans_violation">פרטי זיהוי עסקה נרשמו יותר מדי פעמים. צור קשר עם מפתח היישום על מנת לפתור בעיה זו.</string>
-    <string name="wsc_trans_blocked">פרטי זיהוי עסקה נחסמו. צור קשר עם מפתח היישום על מנת לפתור בעיה זו.</string>
-    <string name="pref_trans_verification_title">זיהוי עסקה של PayPal</string>
-    <string name="pref_trans_verification_summary">במידה ושילמתם על היישום, באפשרותכם להזין את זיהוי העסקה של PayPal על מנת לפתוח תכונות בתשלום</string>
-    <string name="wsc_trans_required_summary">תכונה זו דורשת זיהוי PayPal תקף</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">בטל מידע מערכת</string>
 

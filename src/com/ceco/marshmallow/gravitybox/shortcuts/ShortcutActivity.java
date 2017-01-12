@@ -180,9 +180,7 @@ public class ShortcutActivity extends ListActivity {
         }
         list.add(new RotationLockShortcut(mContext));
         list.add(new SleepShortcut(mContext));
-        if (!LedSettings.isUncLocked(mContext)) {
-            list.add(new QuietHoursShortcut(mContext));
-        }
+        list.add(new QuietHoursShortcut(mContext));
 
         mListAdapter = new IconListAdapter(mContext, list);
         setListAdapter(mListAdapter);

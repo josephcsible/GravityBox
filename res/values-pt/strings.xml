@@ -907,25 +907,6 @@
     <string name="settings_restore_success">Configurações restauradas com sucesso</string>
     <string name="settings_restore_reboot">Por favor, reinicie seu dispositivo.</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Erro ao gerar valor hash do aplicativo</string>
-    <string name="wsc_parse_response_error">Erro ao processar dados obtidos através do serviço Web</string>
-    <string name="wsc_hash_invalid">O serviço Web recusou comunicação devido a incompatibilidade de hashes. Isso tipicamente acontece se
-        você usa uma versão não oficial do GravityBox ou se o APK foi modificado por terceiros.</string>
-    <string name="wsc_please_wait">Por favor aguarde&#8230;</string>
-    <string name="wsc_error">Erro na comunicação com o serviço Web: %s</string>
-    <string name="wsc_task_cancelled">Operação do serviço Web cancelada</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Erro ao processar dados da transação obtidos através do serviço Web</string>
-    <string name="wsc_trans_valid">Verificação do ID de transação concluída com sucesso. As funcionalidades avançadas serão desbloqueadas após reiniciar o GravityBox.</string>
-    <string name="wsc_trans_invalid">O registro do ID de transação especificado não encontrado</string>
-    <string name="wsc_trans_violation">O ID de transação especificado foi usado um número excessivo de vezes. Contacte o autor do GravityBox para resolver.</string>
-    <string name="wsc_trans_blocked">O ID de transação especificado foi bloqueado. Contacte o autor do GravityBox para resolver.</string>
-    <string name="pref_trans_verification_title">ID de transação PayPal</string>
-    <string name="pref_trans_verification_summary">Caso tenha feito uma doação, você pode introduzir o número de identificação da transação PayPal para desbloquear as funcionalidades avançadas</string>
-    <string name="wsc_trans_required_summary">Esta funcionalidade é premium e requer o desbloqueio</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Desativar informações do sistema</string>
 
@@ -1163,10 +1144,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Mostrar erro na sequência</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Permite mostrar um rastro vermelho quando a sequência é introduzida incorretamente</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Esta funcionalidade está em modo de teste. Se a considerar útil você pode continuar usando-a assim que desbloquear as funcionalidades avançadas. 
-        O período de teste termina após reiniciar %d vezes.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Configurações padrão</string>
     <string name="pref_lc_default_settings_summary">Quando ativado, as configurações padrão são aplicadas automaticamente a todos os aplicativos que não tenham uma configuração explicita</string>
@@ -1264,12 +1241,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Indicador de bateria circular e tracejado</string>
     <string name="battery_style_circle_dashed_percent">Indicador de bateria circular e tracejado com porcentagem</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Obrigado pelo suporte. As funcionalidades avançadas serão desbloqueadas após ter reiniciado o GravityBox. 
-        Garanta que mantém o aplicativo de desbloqueio do GravityBox instalado durante pelo menos 120 minutos.</string>
-    <string name="pref_about_get_unlocker_title">Obter desbloqueador</string>
-    <string name="pref_about_get_unlocker_summary">Não tem PayPal? Toque aqui para obter o aplicativo de desbloqueio das funcionalidades avançadas do GravityBox a partir da Play Store.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Usar ícone alternativo</string>

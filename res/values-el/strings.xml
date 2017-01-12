@@ -921,25 +921,6 @@
     <string name="settings_restore_success">Η επαναφορά έγινε με επιτυχία</string>
     <string name="settings_restore_reboot">Παρακαλώ επανεκκινήστε την συσκευή σας</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Αδυναμία δημιουργίας hash κώδικα εφαρμογής</string>
-    <string name="wsc_parse_response_error">Αδυναμία ανάλυσης δεδομένων που λήφθηκαν από την υπηρεσία διαδικτύου</string>
-    <string name="wsc_hash_invalid">Η υπηρεσία διαδικτύου αρνήθηκε να επικοινωνήσει λόγω ασυμφωνίας του κώδικα hash. Αυτό συμβαίνει συνήθως 
-        όταν έχετε ανεπίσημη έκδοση ή το GravityBox APK τροποποιήθηκε από τρίτους.</string>
-    <string name="wsc_please_wait">Παρακαλώ περιμένετε&#8230;</string>
-    <string name="wsc_error">Αδυναμία επικοινωνίας με την υπηρεσία διαδικτύου: %s</string>
-    <string name="wsc_task_cancelled">Η ενέργεια της υπηρεσίας διαδικτύου ακυρώθηκε</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Αδυναμία ανάλυσης δεδομένων συναλλαγής από την υπηρεσία διαδικτύου</string>
-    <string name="wsc_trans_valid">Επιτυχής επαλήθευση ταυτότητας συναλλαγής. Τα premium χαρακτηριστικά θα ενεργοποιηθούν μετά απο επανεκκίνηση του GravityBox.</string>
-    <string name="wsc_trans_invalid">Αδυναμία εύρεσης Unable to find εγγραφής στο μητρώο για αυτήν την ταυτότητα συναλλαγής</string>
-    <string name="wsc_trans_violation">Η συγκεκριμένη ταυτότητα συναλλαγής έχει καταχωρηθεί αρκετές φορές. Επικοινωνήστε με τον προγραμματιστή του GravityBox για επίλυση.</string>
-    <string name="wsc_trans_blocked">Η συγκεκριμένη ταυτότητα συναλλαγής έχει μπλοκαριστεί. Επικοινωνήστε με τον προγραμματιστή του GravityBox για επίλυση.</string>
-    <string name="pref_trans_verification_title">Ταυτότητα συναλλαγής PayPal</string>
-    <string name="pref_trans_verification_summary">Σε περίπτωση που κάνατε δωρεά, μπορείτε να εισάγετε την ταυτότητα συναλλαγής δωρεάς PayPal για να ξεκλειδώσετε τα premium χαρακτηριστικά</string>
-    <string name="wsc_trans_required_summary">Αυτό το χαρακτηριστικό απαιτεί έγκυρη Ταυτότητα συναλλαγής PayPal</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Απενεργοποίηση πληροφοριών συστήματος</string>
 

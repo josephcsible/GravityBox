@@ -910,26 +910,6 @@
     <string name="settings_restore_success">Obnovení nastavení bylo úspěšné</string>
     <string name="settings_restore_reboot">Prosím, restartujte zařízení</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Chyba generování aplikačního hash kódu</string>
-    <string name="wsc_parse_response_error">Chyba zpracování dat webové služby</string>
-    <string name="wsc_hash_invalid">Web Sužby odmítla komunikovat kvůli neshodě aplikačního hash kódu. 
-        Stává se v případě pokud používáte neoficiální verzi GravityBox nebo pokud byl APK soubor modifikovaný třetí stranou.</string>
-    <string name="wsc_please_wait">Prosím čekejte&#8230;</string>
-    <string name="wsc_error">Chyba komunikace s webovou službou: %s</string>
-    <string name="wsc_task_cancelled">Operace byla zrušena</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Chyba zpracování transakčních dat z webové služby</string>
-    <string name="wsc_trans_valid">Verifikace ID transakce proběhla úspěšně. Prémiové funkce budou odemknuty po restartování GravityBox.</string>
-    <string name="wsc_trans_invalid">Zadané ID transakce neexistuje</string>
-    <string name="wsc_trans_violation">Zadané ID transakce bylo pravděpodobně zneužito. Kontaktuje vývojáře aplikace.</string>
-    <string name="wsc_trans_blocked">Zadané ID transakce bylo zablokováno. Kontaktuje vývojáře aplikace.</string>
-    <string name="pref_trans_verification_title">ID PayPal transakce</string>
-    <string name="pref_trans_verification_summary">V případě, že jste podpořili projekt příspěvkem přes PayPal, 
-        můžete použít ID PayPal transakce k odemčení prémiových funkcí</string>
-    <string name="wsc_trans_required_summary">Tato funkce je prémiová a vyžaduje odemknutí</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Vypnout systémové informace</string>
 
@@ -1168,10 +1148,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Ukázat chybu vzorce</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Zobrazí červenou stopu po zadání nesprávného odemykacího vzorce</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Tato funkce je ve zkušebním režimu. V případě, že vyhovuje Vašim potřebám je možné ji aktivovat odemknutím prémiových funkcí. 
-        Počet restartů do skončení zkušebního režimu: %d</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Výchozí nastavení</string>
     <string name="pref_lc_default_settings_summary">Pokud zapnuto, výchozí nastavení budou aplikovány automaticky na všechny aplikace, které nemají aktivní vlastní explicitní nastavení</string>
@@ -1272,12 +1248,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Čárkovaný kruh</string>
     <string name="battery_style_circle_dashed_percent">Čárkovaný kruh s procenty</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Děkujeme za podporu. Prémiové funkce budou odemknuty po restartování systému. 
-        GravityBox zůstane odemčený v případě odinstalace odemykací aplikace po vypršení doby její refundace.</string>
-    <string name="pref_about_get_unlocker_title">Získat odemykací aplikaci</string>
-    <string name="pref_about_get_unlocker_summary">Nemáte PayPal? Jednoduše klepněte sem pro získání odemykací aplikace prémiových funkcí z obchodu Play.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Použít alternativní ikonu</string>

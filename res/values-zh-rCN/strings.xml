@@ -942,25 +942,6 @@
     <string name="settings_restore_success">恢复成功</string>
     <string name="settings_restore_reboot">请重新启动您的设备</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">应用程序错误产生的具体HASH代码</string>
-    <string name="wsc_parse_response_error">从Web服务获取错误解析数据</string>
-    <string name="wsc_hash_invalid">由于哈希不匹配Web服务拒绝通信，这情况通常发生在
-        您运行非官方版或GravityBox APK已经被第三方修改</string>
-    <string name="wsc_please_wait">请稍候&#8230;</string>
-    <string name="wsc_error">与Web服务进行通信错误：%s</string>
-    <string name="wsc_task_cancelled">Web服务操作取消</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">从Web服务获得错误交易数据</string>
-    <string name="wsc_trans_valid">交易ID验证成功，GravityBox重新启动后高级功能将被解锁</string>
-    <string name="wsc_trans_invalid">无法找到指定的交易ID记录</string>
-    <string name="wsc_trans_violation">指定交易ID已经注册过很多次，请联系GravityBox开发者解决</string>
-    <string name="wsc_trans_blocked">指定交易ID已被封锁，请联系GravityBox开发者解决</string>
-    <string name="pref_trans_verification_title">PayPal交易ID</string>
-    <string name="pref_trans_verification_summary">如果您已捐赠，您可以输入您的PayPal捐赠交易ID来解锁高级功能</string>
-    <string name="wsc_trans_required_summary">此功能需要付费解锁</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">禁用系统信息</string>
 
@@ -1198,10 +1179,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">显示格式错误</string>
     <string name="pref_lockscreen_show_pattern_error_summary">进入错误格式时显示红色足迹</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">此功能是试用模式！如果您觉得它有用您可以解锁高级功能
-	在%d重启后将结束试用期</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">默认设置</string>
     <string name="pref_lc_default_settings_summary">当打开时默认设置会自动应用到那些没有激活设定的应用程序</string>
@@ -1306,12 +1283,6 @@
     <string name="battery_style_circle_dashed">虚线圆圈电池</string>
     <string name="battery_style_circle_dashed_percent">虚线圆圈电池含百分比</string>
     
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">感谢您的支持，GravityBox高级功能将在重新启动后解锁
-        退款期限到期后GravityBox将会卸载解锁器并锁定</string>
-    <string name="pref_about_get_unlocker_title">获取解锁器</string>
-    <string name="pref_about_get_unlocker_summary">没有PayPal？只需点击这里从Google Play市场购买GravityBox解锁器来解锁高级功能</string>
-
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">使用备用图标</string>
 

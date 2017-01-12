@@ -940,25 +940,6 @@
     <string name="settings_restore_success">Berjaya dikembalikan</string>
     <string name="settings_restore_reboot">Sila reboot henfon anda</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Gagal mendapatkan hash code untuk aplikasi</string>
-    <string name="wsc_parse_response_error">Gagal memproses data dari web</string>
-    <string name="wsc_hash_invalid">Web gagal berkomunikasi kerana hash code tidak sama. Ini berlaku kerana 
-        anda menggunakan Gravitybox yang tidak asli atau diubah oleh individu tertentu</string>
-    <string name="wsc_please_wait">Sila tunggu&#8230;</string>
-    <string name="wsc_error">Gagal berkomunikasi dengan servis web: %s</string>
-    <string name="wsc_task_cancelled">Operasi web servis dibatalkan</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Gagal mendapatkan transaksi data dari web</string>
-    <string name="wsc_trans_valid">Verifikasi ID berjaya. Kelebihan PREMIUM GravityBox akan aktif setelah di restart</string>
-    <string name="wsc_trans_invalid">Rekod simpanan ID tidak berjaya ditemui</string>
-    <string name="wsc_trans_violation">ID telah didaftar banyak kali. Hubungi pemaju Gravitybox untuk selesaikan.</string>
-    <string name="wsc_trans_blocked">ID di block. Hubungi pemaju Gravitybox untuk selesaikan.</string>
-    <string name="pref_trans_verification_title">Paypal transaksi ID</string>
-    <string name="pref_trans_verification_summary">Jika anda telah menderma, anda boleh masukkan ID transaksi untuk membuka kelebihan PREMIUM</string>
-    <string name="wsc_trans_required_summary">Kelebihan ini memerlukan ID transaksi yang sah</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Matikan info system</string>
 
@@ -1196,10 +1177,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Tunjuk kesalahan corak</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Tunjuk jejak kesalahan dalam garisan merah</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Fitur ini dalam percubaan. Anda boleh guna lagi selepas membeli kunci premium. 
-        Tempoh percubaan tamat selepas %d reboots.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Tetapan asal</string>
     <string name="pref_lc_default_settings_summary">Ketika aktif, tetapan akan di set secara automatik</string>
@@ -1303,12 +1280,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Bateri bulat silang</string>
     <string name="battery_style_circle_dashed_percent">Bateri bulat silang dengan peratus</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Terima kasih atas sokongan anda. Modifikasi Premium akan dibuka selepas sistem di restart. 
-        Gravitybox akan tetap premium walapun selepas kunci premium tiada.</string>
-    <string name="pref_about_get_unlocker_title">Dapatkan kunci premium</string>
-    <string name="pref_about_get_unlocker_summary">Tiada PayPal? klik disini untuk dapatkannya di playstore.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Guna ikon lain</string>

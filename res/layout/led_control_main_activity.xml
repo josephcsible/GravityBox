@@ -20,14 +20,6 @@
     android:focusable="true"
     android:focusableInTouchMode="true" >
 
-    <TextView
-        android:id="@+id/trial_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#ff0000"
-        android:padding="6dp"
-        android:visibility="gone" />
-
     <fragment android:name="com.ceco.marshmallow.gravitybox.ledcontrol.LedMainActivity$PrefsFragment"
         android:id="@+id/prefs_fragment"
         android:layout_width="match_parent"

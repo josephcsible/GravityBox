@@ -4,8 +4,6 @@
 <string name="url_xposed">http://forum.xda-developers.com/showthread.php?t=1574401</string>
 <string name="url_donate">https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=9MZNBXYEN5S68&amp;lc=SK&amp;item_name=GravityBox&amp;currency_code=EUR&amp;bn=PP%%2dDonationsBF%%3abtn_donateCC_LG2egif%%3aNonHosted</string>
 <string name="url_gplus">https://plus.google.com/communities/100769200378960963264</string>
-<string name="url_web_service">http://gravitybox.ceco.sk.eu.org/service.php</string>
-<string name="url_gravitybox_unlocker">https://play.google.com/store/apps/details?id=com.ceco.gravitybox.unlocker</string>
 <string name="app_name">جعبه جذاب (MM)</string>
 <string name="battery_style_title">سبک نشانگر باطری</string>
 <string name="battery_style_stock">نشانگر باطری پیشفرض</string>
@@ -587,20 +585,6 @@
 <string name="settings_restore_failed">بازیابی ناموفق بود</string>
 <string name="settings_restore_success">بازیابی با موفقیت انجام شد</string>
 <string name="settings_restore_reboot">لطفا دستگاه‌تان را راه‌اندازی مجدد نمایید</string>
-<string name="wsc_hash_creation_failed">Error generating app specific hash code</string>
-<string name="wsc_parse_response_error">Error parsing data obtained from web service</string>
-<string name="wsc_hash_invalid">Web service refused to communicate due to hash mismatch. This typically happens in case you run unofficial version or GravityBox APK has been modified by 3rd party.</string>
-<string name="wsc_please_wait">لطفا منتظر باشید…</string>
-<string name="wsc_error">خطا در برقراری ارتباط با وب سرویس: %s</string>
-<string name="wsc_task_cancelled">عملیات سرویس وب لغو شد</string>
-<string name="wsc_trans_parse_response_error">خطا در تفسیر اطلاعات داده‌های به دست آمده از سرویس وب</string>
-<string name="wsc_trans_valid">تأیید ID تراکنش موفق بود.امکانات حرفه‌ای پس از شروع مجدد جعبه جذاب قفل‌گشایی میشوند</string>
-<string name="wsc_trans_invalid">برای ID تراکنش مذکور اطلاعاتی ثبت نشده است</string>
-<string name="wsc_trans_violation">تراکنش با ID مذکور بارها ثبت شده.برای حل مشکل با توسعه دهنده جعبه جذاب تماس بگیرید.</string>
-<string name="wsc_trans_blocked">تراکنش با ID مذکور مسدود شده است.برای حل مشکل با توسعه دهنده جعبه جذاب تماس بگیرید</string>
-<string name="pref_trans_verification_title">PayPal transaction ID</string>
-<string name="pref_trans_verification_summary">در صورت اهدا کمک حمایتی،میتوانید ID پرداخت در PayPal خود را برای قفل‌گشایی ویژگی‌های حرفه‌ای وارد کنید</string>
-<string name="wsc_trans_required_summary">این ویژگی مختص نسخه کامل است و نیازمند قفل‌گشای است</string>
 <string name="pref_pie_sysinfo_disable_title">غیرفعالسازی مشخصات سیستم</string>
 <string name="pref_pie_longpress_delay_title">تأخیر زمانی لمس طولانی</string>
 <string name="pie_longpress_delay_default">پیشفرض سیستم</string>
@@ -775,7 +759,6 @@
 <string name="pref_virtual_key_vibrate_pattern_summary">لیست جدا شده با ویرگول از مدت زمان خاموش و روشن شدن جفتسازی در میلی ثانیه.برای لرزش پیشفرض خالی بگذارید</string>
 <string name="pref_lockscreen_show_pattern_error_title">نمایش خطای الگو</string>
 <string name="pref_lockscreen_show_pattern_error_summary">نمایش متن اخطار با رنگ قرمز هنگام عدم تطبیق الگوی ورودی</string>
-<string name="trial_info">This feature is in trial mode. If you find it useful you can continue using it after unlocking premium features. Trial period ends after %d reboots.</string>
 <string name="lc_activity_menu_default_settings">تنظیمات پیشفرض</string>
 <string name="pref_lc_default_settings_summary">هنگام روشن بودن،تنظیمات پیشفرض بصورت خودکار برای همه برنامه‌های که تنظیمات فعال آشکاری ندارند اعمال میشود</string>
 <string name="lc_defaults_apply">اعمال تنظیمات پیشفرض</string>
@@ -834,9 +817,6 @@
 <string name="pref_data_traffic_active_mobile_only_title">فقط داده‌های همراه</string>
 <string name="battery_style_circle_dashed">نشانگر حلقوی سایه‌دار باطری</string>
 <string name="battery_style_circle_dashed_percent">نشانگر حلقوی سایه‌دار باطری با درصد شارژ</string>
-<string name="premium_unlocked_message">بخاطر حمایت‌مان از شما متشکریم.امکانات حرفه‌ای پس از شروع مجدد دستگاه قفل‌گشایی خواهند شد.پس از قفل‌گشایی امکانات حرفه‌ای قفل گشا را لغو نصب نمایید</string>
-<string name="pref_about_get_unlocker_title">دریافت قفل‌گشا</string>
-<string name="pref_about_get_unlocker_summary">"Don't have PayPal? Simply touch here to get GravityBox premium feature unlocker from the Play Store."</string>
 <string name="pref_navbar_custom_key_icon_title">استفاده از آیکون‌ جایگزین</string>
 <string name="pref_smart_radio_mda_ignore_title">نادیده‌گرفتن دسترسی به داده‌های تلفن همراه</string>
 <string name="pref_smart_radio_mda_ignore_summary">سوئیچ به حالت نرمال زمانیکه داده‌های همراه در دسترس نبودن</string>

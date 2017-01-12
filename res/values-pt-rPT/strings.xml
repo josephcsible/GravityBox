@@ -914,25 +914,6 @@
     <string name="settings_restore_success">Definições restauradas com sucesso</string>
     <string name="settings_restore_reboot">Por favor reinicie o seu dispositivo</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Erro ao gerar valor hash da aplicação</string>
-    <string name="wsc_parse_response_error">Erro ao processar dados obtidos através do serviço Web</string>
-    <string name="wsc_hash_invalid">O serviço Web recusou comunicação devido a incompatibilidade de hashes. Tipicamente acontece quando 
-        se corre uma versão não oficial do GravityBox, modificada por terceiros.</string>
-    <string name="wsc_please_wait">Por favor aguarde&#8230;</string>
-    <string name="wsc_error">Erro na comunicação com o serviço Web: %s</string>
-    <string name="wsc_task_cancelled">Cancelada operação do serviço Web</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Erro ao processar dados da transação obtidos através do serviço Web</string>
-    <string name="wsc_trans_valid">Verificação da transação concluída com sucesso. As funcionalidades avançadas serão desbloqueadas após reiniciar o GravityBox.</string>
-    <string name="wsc_trans_invalid">Registo da transação especificada não encontrado</string>
-    <string name="wsc_trans_violation">A transação especificada foi usada demasiadas vezes. Contacte o autor do GravityBox para resolução.</string>
-    <string name="wsc_trans_blocked">A transação especificada foi bloqueada. Contacte o autor do GravityBox para resolução.</string>
-    <string name="pref_trans_verification_title">Transação PayPal</string>
-    <string name="pref_trans_verification_summary">Caso tenha enviado algum contributo, pode introduzir o número de identificação da transação PayPal para desbloquear as funcionalidades avançadas</string>
-    <string name="wsc_trans_required_summary">Esta funcionalidade é avançada e requer o desbloqueio</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Desativar informação do sistema</string>
 
@@ -1170,10 +1151,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Mostrar erro na sequência</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Permite mostrar um trilho vermelho quando a sequência é introduzida incorretamente</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Esta funcionalidade está em modo de teste. Se a considerar útil pode continuar a utilizá-la assim que desbloquear as funcionalidades avançadas. 
-        O período de teste termina após reiniciar %d vezes.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Definições padrão</string>
     <string name="pref_lc_default_settings_summary">Quando ativado, as definições padrão são aplicadas automaticamente a todas as aplicações que não tenham uma configuração explicita</string>
@@ -1270,12 +1247,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Indicador de bateria circular e tracejado</string>
     <string name="battery_style_circle_dashed_percent">Indicador de bateria circular e tracejado com percentagem</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Obrigado pelo suporte. As funcionalidades avançadas serão desbloqueadas após reiniciar o sistema. 
-        As funcionalidade avançadas do Gravitybox permanecerão desbloqueadas, caso opte por desinstalar a aplicação de desbloqueio após expirar o período experimental.</string>
-    <string name="pref_about_get_unlocker_title">Obter desbloqueador</string>
-    <string name="pref_about_get_unlocker_summary">Não tem PayPal? Carregue aqui para obter a aplicação de desbloqueio das funcionalidades avançadas do GravityBox a partir da Play Store.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Usar ícone alternativo</string>

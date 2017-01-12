@@ -60,8 +60,7 @@ public class QuietHoursTile extends QsTile implements QuietHoursListener {
     }
 
     private boolean shouldShow() {
-        return (mQh != null &&
-                !mQh.uncLocked && mQh.enabled);
+        return (mQh != null && mQh.enabled);
     }
 
     private void toggleState() {

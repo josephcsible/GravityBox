@@ -186,8 +186,7 @@ public class ModLedControl {
                         intentFilter.addAction(GravityBoxSettings.ACTION_PREF_POWER_CHANGED);
                         mContext.registerReceiver(mBroadcastReceiver, intentFilter);
 
-                        toggleActiveScreenFeature(!mPrefs.getBoolean(LedSettings.PREF_KEY_LOCKED, false) && 
-                                mPrefs.getBoolean(LedSettings.PREF_KEY_ACTIVE_SCREEN_ENABLED, false));
+                        toggleActiveScreenFeature(mPrefs.getBoolean(LedSettings.PREF_KEY_ACTIVE_SCREEN_ENABLED, false));
                         hookNotificationDelegate();
 
                         if (DEBUG) log("Notification manager service initialized");
@@ -217,11 +216,6 @@ public class ModLedControl {
         @Override
         protected void beforeHookedMethod(final MethodHookParam param) throws Throwable {
             try {
-                if (mPrefs.getBoolean(LedSettings.PREF_KEY_LOCKED, false)) {
-                    if (DEBUG) log("Ultimate notification control feature locked.");
-                    return;
-                }
-
                 Notification n = (Notification) param.args[6];
 
                 if (Utils.isVerneeApolloLiteDevice()) {
@@ -845,7 +839,7 @@ public class ModLedControl {
     private static boolean shouldNotDisturb(Context context) {
         String pkgName = getTopLevelPackageName(context);
         final XSharedPreferences uncPrefs = new XSharedPreferences(GravityBox.PACKAGE_NAME, "ledcontrol");
-        if(!uncPrefs.getBoolean(LedSettings.PREF_KEY_LOCKED, false) && pkgName != null) {
+        if(pkgName != null) {
             LedSettings ls = LedSettings.deserialize(uncPrefs.getStringSet(pkgName, null));
             return (ls.getEnabled() && ls.getHeadsUpDnd());
         } else {

@@ -940,25 +940,6 @@
     <string name="settings_restore_success">Khôi phục thành công</string>
     <string name="settings_restore_reboot">Hãy khởi động lại điện thoại</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Lỗi tạo dựng vì mã hỏng</string>
-    <string name="wsc_parse_response_error">Lỗi phân tích dữ liệu từ dịch vụ web</string>
-    <string name="wsc_hash_invalid">Dịch vụ web từ chối giao tiếp vì kết nối không phù hợp. Điều này thường xảy ra khi 
-        bạn dùng GravityBox phiên bản không chính thức hoặc bị chỉnh sửa bởi phần mềm bên thứ 3.</string>
-    <string name="wsc_please_wait">Vui lòng chờ&#8230;</string>
-    <string name="wsc_error">Lỗi giao tiếp với dịch vụ Web: %s</string>
-    <string name="wsc_task_cancelled">Hoạt động dịch vụ web bị hủy</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Lỗi phân tích dữ liệu từ dịch vụ web</string>
-    <string name="wsc_trans_valid">Giao dịch kiểm tra ID thành công. Tính năng Premium sẽ được mở khi GravityBox được khởi động lại.</string>
-    <string name="wsc_trans_invalid">Không thể tìm thông tin của ID</string>
-    <string name="wsc_trans_violation">ID đã được đăng ký quá nhiều lần. Liên hệ nhà phát triển GravityBox để giải quyết.</string>
-    <string name="wsc_trans_blocked">ID đã bị khóa. Liên hệ nhà phát triển GravityBox để giải quyết.</string>
-    <string name="pref_trans_verification_title">ID ủng hộ PayPal</string>
-    <string name="pref_trans_verification_summary">Trong trường hợp bản ủng hộ, bạn có thể nhập ID ủng hộ PayPal để mở khóa các tính năng Premium</string>
-    <string name="wsc_trans_required_summary">Tính năng này là Premium và cần mở khóa</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Ẩn thông tin hệ thống</string>
 
@@ -1196,10 +1177,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Hiện mẫu hình lỗi</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Hiện đường màu đỏ khi nhập sai mẫu hình</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Tính năng này đang trong chế độ dùng thử. Nếu bạn thấy nó hữu ích bạn có thể sử dụng sau khi mở khóa tính năng Premium. 
-        Giai đoạn dùng thử sẽ hết sau %d lần khởi động lại.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Cài đặt mặc định</string>
     <string name="pref_lc_default_settings_summary">Khi bật, các cài đặt mặc định sẽ tự động áp dụng cho tất cả các ứng dụng không có cài đặt hoạt động rõ ràng</string>
@@ -1303,12 +1280,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Vòng tròn không kín</string>
     <string name="battery_style_circle_dashed_percent">Vòng tròn không kín với phần trăm</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Cảm ơn sự ủng hộ của bạn. Tính năng Premium sẽ được mở khóa sau khi khởi động lại hệ thống. 
-        Gỡ cài đặt unlocker sau khi hết thời gian hoàn phí sẽ giữ GravityBox được mở khóa.</string>
-    <string name="pref_about_get_unlocker_title">Tải Unlocker</string>
-    <string name="pref_about_get_unlocker_summary">Chưa có PayPal? Bấm vào đây để tải GravityBox Premium thông qua CH Play.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Dùng biểu tượng thay thế</string>

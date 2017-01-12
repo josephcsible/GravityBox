@@ -908,24 +908,6 @@
     <string name="settings_restore_success">Przywracanie udane</string>
     <string name="settings_restore_reboot">Proszę ponownie uruchomić urządzenie</string>
 
-    <!-- Web service client strings -->
-    <string name="wsc_hash_creation_failed">Błąd generowania specyficznego hash kodu aplikacji</string>
-    <string name="wsc_parse_response_error">Błąd parsowania danych uzyskanych z usługi internetowej</string>
-    <string name="wsc_hash_invalid">Serwis internetowy odmówił komunikacji z powodu niezgodności hash kodu. Zazwyczaj zdarza się to w przypadku uruchomienia nieoficjalnej wersji aplikacji GravityBox lub zmodyfikowanej przez osoby trzecie.</string>
-    <string name="wsc_please_wait">Proszę czekać&#8230;</string>
-    <string name="wsc_error">Błąd komunikacji z usługą sieci Web: %s</string>
-    <string name="wsc_task_cancelled">Działanie serwisu Web anulowane</string>
-
-    <!-- Transaction verification -->
-    <string name="wsc_trans_parse_response_error">Błąd parsowania danych transakcji uzyskanych z usługi internetowej</string>
-    <string name="wsc_trans_valid">Weryfikacja ID transakcji powiodła się. Funkcje Premium zostaną odblokowane po ponownym uruchomieniu GravityBox.</string>
-    <string name="wsc_trans_invalid">Nie można odnaleźć rekordu dla określonego ID transakcji</string>
-    <string name="wsc_trans_violation">Określony ID transakcji został zarejestrowana zbyt wiele razy. Skontaktuj się z autorem GravityBox, aby rozwiązać problem.</string>
-    <string name="wsc_trans_blocked">Określony ID transakcji został zablokowany. Skontaktuj się z autorem GravityBox, aby rozwiązać problem.</string>
-    <string name="pref_trans_verification_title">ID transakcji PayPal</string>
-    <string name="pref_trans_verification_summary">W przypadku dokonania wpłaty, możesz wprowadzić swój ID transakcji PayPal, aby odblokować dodatkowe funkcje</string>
-    <string name="wsc_trans_required_summary">Ta funkcja wymaga poprawnego ID transakcji PayPal</string>
-
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Wyłącz informacje o systemie</string>
 
@@ -1162,9 +1144,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">Pokaż błąd wzoru</string>
     <string name="pref_lockscreen_show_pattern_error_summary">Wyświetla czerwony ślad po wprowadzeniu złego wzoru odblokowania</string>
 
-    <!-- Premium features: allow trial period -->
-    <string name="trial_info">Ta funkcja działa obecnie w trybie próbnym. Jeśli okaże się przydatna, będzie jej można nadal używać po zarejestrowaniu identyfikatora transakcji PayPal. Okres próbny kończy się po %d ponownych uruchomieniach.</string>
-
     <!-- Notification control: default settings -->
     <string name="lc_activity_menu_default_settings">Ustawienia domyślne</string>
     <string name="pref_lc_default_settings_summary">Gdy włączone, automatycznie stosuje ustawienia domyślne dla wszystkich aplikacji, które nie mają aktywnych sprecyzowanych ustawień kontroli powiadomień</string>
@@ -1260,12 +1239,6 @@
     <!-- Dashed circle battery style -->
     <string name="battery_style_circle_dashed">Przerywane koło</string>
     <string name="battery_style_circle_dashed_percent">Przerywane koło z procentami</string>
-
-    <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Dziękujemy za wsparcie. Funkcje premium zostaną odblokowane po ponownym uruchomieniu GravityBox. 
-        GravityBox pozostanie odblokowany w przypadku odinstalowania unlockera po upływie terminu zwrotu.</string>
-    <string name="pref_about_get_unlocker_title">Pobierz GB Unlocker</string>
-    <string name="pref_about_get_unlocker_summary">Nie posiadasz PayPal? Wystarczy kliknąć tutaj, aby pobrać ze sklepu Google Play aplikację do odblokowania funkcji premium GravityBox.</string>
 
     <!-- Navbar custom key: alternate icon -->
     <string name="pref_navbar_custom_key_icon_title">Użyj alternatywnej ikony</string>

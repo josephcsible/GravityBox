@@ -739,23 +739,6 @@
     <string name="settings_restore_success">복구 성공!</string>
     <string name="settings_restore_reboot">기기를 재시작해야 값들이 적용됩니다.</string>
 
-    <string name="wsc_hash_creation_failed">특정 앱 해시 코드를 생성할 수 없습니다.</string>
-    <string name="wsc_parse_response_error">웹 서비스에서 가져온 데이터의 구문을 분석할 수 없습니다.</string>
-    <string name="wsc_hash_invalid">해시 코드가 일치하지 않아서 웹 서비스를 종료했습니다. 
-        이러한 경우는 제 3자에 의해 수정된 GravityBox APK 파일을 사용해서 그럴 수도 있습니다. Xposed 설치 도구로 재설치하세요.</string>
-    <string name="wsc_please_wait">잠시만 기다려주세요&#8230;</string>
-    <string name="wsc_error">웹 서비스와 통신 실패 : %s</string>
-    <string name="wsc_task_cancelled">웹 서비스 작업 실패</string>
-
-    <string name="wsc_trans_parse_response_error">웹 서비스에서 가져온 트랜젝션 데이터의 구문을 분석할 수 없습니다.</string>
-    <string name="wsc_trans_valid">트랜젝션 ID가 일치합니다. 프리미엄 기능들이 해제되었습니다. GravityBox를 다시 시작해 주세요.</string>
-    <string name="wsc_trans_invalid">특정 트랜젝션 ID를 가져올 수 없습니다.</string>
-    <string name="wsc_trans_violation">특정 트랜젝션 ID가 많은 시간동안 가입되었습니다. GravityBox 개발자 측으로 문의해 주세요. (영어)</string>
-    <string name="wsc_trans_blocked">특정 트랜젝션 ID가 차단되었습니다. GravityBox 개발자 측으로 문의해 주세요. (영어)</string>
-    <string name="pref_trans_verification_title">PayPal 트랜젝션 ID</string>
-    <string name="pref_trans_verification_summary">만약 기부를 했었다면, 여기에다가 PayPal 기부 트랜젝션 ID를 입력하여 프리미엄 기능을 해제할 수 있습니다.</string>
-    <string name="wsc_trans_required_summary">제대로 된 PayPal 트렌젝션 ID가 필요합니다.</string>
-
     <string name="pref_pie_sysinfo_disable_title">시스템 정보 비활성화</string>
 
     <string name="pref_pie_longpress_delay_title">길게 누르기 지연시간</string>
@@ -961,9 +944,6 @@
     <string name="pref_lockscreen_show_pattern_error_title">패턴 오류 표시</string>
     <string name="pref_lockscreen_show_pattern_error_summary">패턴을 잘못 입력하였을 때 빨간 표시 여부를 정합니다.</string>
 
-    <string name="trial_info">현재 체험판 모드입니다. 프리미엄으로 업그레이드 하면 제한 없이 사용하실 수 있습니다. 
-        체험판 모드 종료까지 %d번의 재부팅 횟수가 남았습니다.</string>
-
     <string name="lc_activity_menu_default_settings">기본 설정</string>
     <string name="pref_lc_default_settings_summary">활성화 하면 특별한 개별 설정이 없는 이상 이 기본 설정으로 값들이 적용됩니다.</string>
     <string name="lc_defaults_apply">기본 설정 적용</string>
@@ -1042,11 +1022,6 @@
 
     <string name="battery_style_circle_dashed">점선 원 배터리</string>
     <string name="battery_style_circle_dashed_percent">점선 원 배터리 (퍼센트 표시)</string>
-
-    <string name="premium_unlocked_message">지원해주셔서 감사드립니다! 모든 프리미엄 기능은 재시작 후에 사용 가능합니다.
-        환불 가능 시간이 지난 후 Unlocker를 삭제하여도 GravityBox의 프리미엄 기능은 사용 가능합니다.</string>
-    <string name="pref_about_get_unlocker_title">Unlocker 얻기</string>
-    <string name="pref_about_get_unlocker_summary">PayPal 계정이 없으신가요? 여기를 눌러 플레이 스토어에서 GravityBox 프리미엄 기능 Unlocker를 구매하세요!</string>
 
     <string name="pref_navbar_custom_key_icon_title">대체 아이콘 사용</string>
 
