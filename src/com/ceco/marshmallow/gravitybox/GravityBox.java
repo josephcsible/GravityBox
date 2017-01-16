@@ -26,7 +26,7 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
-public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackageResources, IXposedHookLoadPackage {
+public class GravityBox implements IXposedHookZygoteInit, /*IXposedHookInitPackageResources,*/ IXposedHookLoadPackage {
     public static final String PACKAGE_NAME = GravityBox.class.getPackage().getName();
     public static String MODULE_PATH = null;
     private static XSharedPreferences prefs;
@@ -69,9 +69,11 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
         SystemWideResources.initResources(prefs);
 
         // Common
+        /*
         ModInputMethod.initZygote(prefs);
         PhoneWrapper.initZygote(prefs);
         ModTelephony.initZygote(prefs);
+        */
 
         // MTK (deprecated)
 //        if (Utils.isMtkDevice()) {
@@ -81,7 +83,7 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
 //        }
     }
 
-    @Override
+    /*@Override
     public void handleInitPackageResources(InitPackageResourcesParam resparam) throws Throwable {
         if (Build.VERSION.SDK_INT != 23) {
             return;
@@ -107,7 +109,7 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
                 prefs.getBoolean(GravityBoxSettings.PREF_KEY_QUICK_SETTINGS_ENABLE, false)) {
             ModQsTiles.initResources(resparam);
         }
-    }
+    }*/
 
     @Override
     public void handleLoadPackage(LoadPackageParam lpparam) throws Throwable {
@@ -118,7 +120,7 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
         if (lpparam.packageName.equals("android") &&
                 lpparam.processName.equals("android")) {
             XposedBridge.log("GB:Is AOSP forced: " + Utils.isAospForced());
-            ModVolumeKeySkipTrack.initAndroid(prefs, lpparam.classLoader);
+            /*ModVolumeKeySkipTrack.initAndroid(prefs, lpparam.classLoader);
             ModHwKeys.initAndroid(prefs, lpparam.classLoader);
             ModExpandedDesktop.initAndroid(prefs, lpparam.classLoader);
             ModAudio.initAndroid(prefs, lpparam.classLoader);
@@ -127,14 +129,14 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
             ModDisplay.initAndroid(prefs, lpparam.classLoader);
             ConnectivityServiceWrapper.initAndroid(lpparam.classLoader);
             ModViewConfig.initAndroid(prefs, lpparam.classLoader);
-            ModPower.initAndroid(prefs, lpparam.classLoader);
+            ModPower.initAndroid(prefs, lpparam.classLoader);*/
             ModLedControl.initAndroid(prefs, lpparam.classLoader);
-            ModTrustManager.initAndroid(prefs, lpparam.classLoader);
+            /*ModTrustManager.initAndroid(prefs, lpparam.classLoader);
             ModPowerMenu.initAndroid(prefs, lpparam.classLoader);
             ModFingerprint.initAndroid(prefs, lpparam.classLoader);
             if (prefs.getBoolean(GravityBoxSettings.PREF_KEY_FINGERPRINT_LAUNCHER_ENABLE, false)) {
                 FingerprintLauncher.initAndroid(lpparam.classLoader);
-            }
+            }*/
         }
 
         if (lpparam.packageName.equals(SystemPropertyProvider.PACKAGE_NAME)) {
@@ -154,6 +156,7 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
 //        }
 
         // Common
+        /*
         if (lpparam.packageName.equals(ModLowBatteryWarning.PACKAGE_NAME)) {
             ModLowBatteryWarning.init(prefs, lpparam.classLoader);
         }
@@ -222,22 +225,22 @@ public class GravityBox implements IXposedHookZygoteInit, IXposedHookInitPackage
 
         if (lpparam.packageName.equals(ModRinger.PACKAGE_NAME)) {
             ModRinger.init(prefs, lpparam.classLoader);
-        }
+        }*/
 
         if (lpparam.packageName.equals(ModLedControl.PACKAGE_NAME_SYSTEMUI)) {
             ModLedControl.init(prefs, lpparam.classLoader);
-            if (prefs.getBoolean(GravityBoxSettings.PREF_KEY_HEADS_UP_MASTER_SWITCH, false)) {
+            /*if (prefs.getBoolean(GravityBoxSettings.PREF_KEY_HEADS_UP_MASTER_SWITCH, false)) {
                 ModLedControl.initHeadsUp(prefs, lpparam.classLoader);
-            }
+            }*/
         }
 
-        if (lpparam.packageName.equals(ModMms.PACKAGE_NAME)) {
+        /*if (lpparam.packageName.equals(ModMms.PACKAGE_NAME)) {
             ModMms.init(prefs, lpparam.classLoader);
         }
 
         if (lpparam.packageName.equals(ModTelecom.PACKAGE_NAME)) {
             ModTelecom.init(prefs, lpparam.classLoader);
-        }
+        }*/
     }
 }
 
